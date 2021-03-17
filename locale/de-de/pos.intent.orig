@@ -1,0 +1,2 @@
+(wähle | spiele | wechsel zu) am (radio | gerät) {radio} (sender | kanal | lied | song | nummer | position | titel | platz) {pos_nr}
+(wähle | spiele | wechsel zu) am (radio | gerät) (im | in der) {radio} (sender | kanal | lied | song | nummer | position | titel | platz) {pos_nr}

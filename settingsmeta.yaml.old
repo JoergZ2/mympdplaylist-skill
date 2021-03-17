@@ -85,3 +85,30 @@ skillMetadata:
           label: Placement
           value:
           placeholder: room5
+
+    - name: Localization for music database search
+      fields:
+        - name: trans_artist
+          type: text
+          label: your word for artist
+          value: artist
+          placeholder: artist
+        - name: trans_title
+          type: text
+          label: your word for titel
+          value: title
+          placeholder: titel
+        - name: trans_album
+          type: text
+          label: your word for album
+          value: album
+          placeholder: album
+        - name: trans_genre
+          type: text
+          label: your word for (music) genre
+          value: genre
+          placeholder: genre
+      
+    
+  
+

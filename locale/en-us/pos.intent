@@ -1,0 +1,4 @@
+(choose | play | switch to) (station | channel | song | number | position | title | place) {pos_nr} on (radio | device) (in | in the) {placement}
+(choose | play | switch to) on (radio | device) (in | in the) {placement} (station | channel | song | song | number | position | title | place) {pos_nr}
+(choose | play | switch to) (station | channel | song | song | number | position | title | place) {pos_nr}
+

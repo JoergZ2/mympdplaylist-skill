@@ -1,0 +1,4 @@
+(open | load) (playlist | playlist | list | the playlist | the list) {playlist} and play (song | title | number | position | channel | sender) {pos_nr}
+(open | load) (playlist | playlist | list) {playlist} on (radio | device) {placement} and play (song | title | number | position | channel | sender) {pos_nr}
+(open | load) (playlist | playlist | list) {playlist} on (radio | device) (in | in the) {placement} and play (song | title | number | position | channel | sender) {pos_nr}
+

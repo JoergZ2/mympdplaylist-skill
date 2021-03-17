@@ -1,0 +1,4 @@
+Öffne (playlist | playliste | liste | die playlist | die playliste | die liste) {playlist} und spiele (lied | titel | nummer | position | kanal | sender) {pos_nr}
+Öffne (playlist | playliste | liste) {playlist} am (radio | gerät) {placement} und spiele (lied | titel | nummer | position | kanal | sender) {pos_nr}
+Öffne (playlist | playliste | liste) {playlist} am (radio | gerät) (im | in der) {placement} und spiele (lied | titel | nummer | position | kanal | sender) {pos_nr}
+
