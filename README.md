@@ -1,5 +1,5 @@
 # <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/list.svg" card_color="#22A7F0" width="50" height="50" style="vertical-align:bottom"/>
-## Mympdplaylist-skill
+# Mympdplaylist-skill
 This skill tries to make the handling of saved playlists for the player MPD comfortable. In addition, this skill occasionally dialogs with the user or announces information. (There is a very good MPD skill from forslund. If you don't use playlists, but only have a music collection of music files, you should use his skill.)
 If you can answer three or more questions with yes, you should try this skill:<br>
 Are different playlists used in MPD?<br>
@@ -25,7 +25,7 @@ Do you want to be able to control all MPD players with all Mycroft systems?
 All commands can be executed on a remote device with the addition "on the radio (in the | in the) [room name]".<br>
 It is strongly recommended to blacklist the skills mycroft-playback-control.mycroftai and mycroft-volume.mycroftai.<br>
 Please read at least the configuration section in the wiki.<br>
-More information about configuration, functionality and commands in the wiki.
+More information about configuration, functionality and commands in the <a href="https://github.com/JoergZ2/mympdplaylist-skill/wiki/Wiki---International-Version">wiki.</a>
 
 ## Credits
 JoergZ2
