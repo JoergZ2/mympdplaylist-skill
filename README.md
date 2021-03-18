@@ -23,7 +23,7 @@ Do you want to be able to control all MPD players with all Mycroft systems?
 "Search (Find | Exists) [search term] in any playlist." - Search all playlists<br>
 "Search (Find | Exists) [search term] in the music database (music collection)." - then dialog for narrowing down search results.<br>
 All commands can be executed on a remote device with the addition "on the radio (in the | in the) [room name]".<br>
-It is strongly recommended to blacklist the skills mycroft-playback-control.mycroftai and mycroft-volume.mycroftai.<br>
+**It is strongly recommended to blacklist or deactivate the skills mycroft-playback-control.mycroftai and mycroft-volume.mycroftai.**<br>
 Please read at least the configuration section in the wiki.<br>
 More information about configuration, functionality and commands in the <a href="https://github.com/JoergZ2/mympdplaylist-skill/wiki/Wiki---International-Version">wiki.</a>
 
