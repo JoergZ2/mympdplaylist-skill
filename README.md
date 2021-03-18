@@ -27,6 +27,9 @@ It is strongly recommended to blacklist the skills mycroft-playback-control.mycr
 Please read at least the configuration section in the wiki.<br>
 More information about configuration, functionality and commands in the <a href="https://github.com/JoergZ2/mympdplaylist-skill/wiki/Wiki---International-Version">wiki.</a>
 
+## Requirements
+python-mpd2 (`pip install python-mpd2`)
+
 ## Credits
 JoergZ2
 
