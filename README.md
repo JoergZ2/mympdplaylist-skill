@@ -26,7 +26,7 @@ All commands can be executed on a remote device with the addition "on the radio 
 
 Under not fully reproducible conditions, conflicts with the mycroft-playback-control.mycroftai skill may occur. Please report on this under Issues
 
-**To avoid possible conflicts with the skill mycroft-volume.mycroftai, the announcement to change the volume must be expressed in a differentiated way. the best results are (for an english speaking german) with this words turn up (down) the volume of mpd (in the kitchen).** At least a blacklisting of mycroft-volume.mycroftai helps but is not necessary.<br>
+**To avoid possible conflicts with the skill mycroft-volume.mycroftai, the announcement to change the volume must be expressed in a differentiated way. the best results are (for an english speaking german) with this words "Turn up (down) the volume of mpd (in the kitchen)".** At least a blacklisting of mycroft-volume.mycroftai helps but is not necessary.<br>
 Please read at least the configuration section in the wiki.<br>
 More information about configuration, functionality and commands in the <a href="https://github.com/JoergZ2/mympdplaylist-skill/wiki/Wiki---International-Version">wiki.</a>
 
