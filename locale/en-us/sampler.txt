@@ -1,0 +1,245 @@
+<H3>Files in Folder en-us</H3>
+<H4>Intent File</H4>
+**info_current_list.intent**
+which (songs | titles | songs | stations | channels) are on the current (list | playlist | playlist)?
+which (songs | titles | songs | stations | channels) are on the radio (in | in the) {placement} on the current (list | playlist | playlist)
+
+**info_current_title.intent**
+What do (I | we) (hear | listen) right now
+What do (I | we) (hear | listen)
+What (am I | are we) listening
+What is playing
+Read the current title from the radio (in the | im) {placement}
+What (I'm listening to) (we're listening to) on the radio (in the) {placement}
+What is played (on | in) radio (in the | in) {placement}
+what is playing (on | in) radio (in the | in) {placement}
+What (I | we) are listening to (on | from) radio
+
+**playlist_replace_and_play.intent**
+(open | load) (playlist | playlist | list | the playlist | the list) {playlist} and play (song | title | number | position | channel | sender) {pos_nr}
+(open | load) (playlist | playlist | list) {playlist} on (radio | device) {placement} and play (song | title | number | position | channel | sender) {pos_nr}
+(open | load) (playlist | playlist | list) {playlist} on (radio | device) (in | in the) {placement} and play (song | title | number | position | channel | sender) {pos_nr}
+
+**playlist_stored.intent**
+What are the playlists on the radio (at | in} {placement}
+List the playlists on the radio (in the) {placement}
+Which (playlists | playlist) are there
+
+**pos.intent**
+(choose | play | switch to) (station | channel | song | number | position | title | place) {pos_nr} on (radio | device) (in | in the) {placement}
+(choose | play | switch to) on (radio | device) (in | in the) {placement} (station | channel | song | song | number | position | title | place) {pos_nr}
+(choose | play | switch to) (station | channel | song | song | number | position | title | place) {pos_nr}
+
+**pos.intent.orig**
+(wähle | spiele | wechsel zu) am (radio | gerät) {radio} (sender | kanal | lied | song | nummer | position | titel | platz) {pos_nr}
+(wähle | spiele | wechsel zu) am (radio | gerät) (im | in der) {radio} (sender | kanal | lied | song | nummer | position | titel | platz) {pos_nr}
+
+**pos_first.intent**
+(choose | games | change to) the first (station | channel | song | number | position | title)
+(choose | games | switch to) on (radio | device) (in | the) {placement} first (station | channel | song | number | position | title)
+(choose | play | switch to) on (radio | device) {placement} the first (station | channel | song | number | position | title)
+
+**pos_last.intent**
+(choose | games | change to) the last (station | channel | song | number | position | title)
+(choose | games | switch to) on (radio | device) (in | the) {placement} last (station | channel | song | number | position | title)
+(choose | play | switch to) on (radio | device) {placement} the last (station | channel | song | number | position | title)
+
+**pos_next.intent**
+(choose | games | change to) next (station | channel | song | number | position | title)
+(choose | games | switch to) on (radio | device) (in | the) {placement} next (station | channel | song | number | position | title)
+(choose | play | switch to) on (radio | device) {placement} next (station | channel | song | number | position | title)
+
+**pos_previous.intent**
+(choose | games | change to) previous (station | channel | song | number | position | title)
+(choose | games | switch to) on (radio | device) (in | the) {placement} previous (station | channel | song | number | position | title)
+(choose | play | switch to) on (radio | device) {placement} previous (station | channel | song | number | position | title)
+
+**search.intent**
+(search | find | is there) on (radio | device) (in the | in) {placement} on the (list | playlist | playlist) {query}
+(search | find | is there) {query} (in the | on the) (list | playlist | playlist)
+
+**search_add_play_database.intent**
+(search | find) {query} (in the music database | in the music collection) and play (song | title | song | place | channel | number) {pos_nr}
+(search | find) {query} (in the music database | in the music collection) and play (song | title | song | place | channel | number) {pos_nr} on the radio (in | in the) {placement}
+
+**search_all_playlists.dialog**
+I found the search term {query} in the playlist {playlist} at position {pos}. The title is {name}.
+
+**search_all_playlists.intent**
+(search | find) {query} in (all | any) (list | lists | playlist | playlists)
+(is there | do we have) {query} in any (list | playlist)
+
+**search_in_database.intent**
+(search | find) {query} (in the music database | in the music collection)
+
+**start_mpd.intent**
+(Make | turn on) (the radio | the music)
+(Make | turn on) (the radio | the music) (in | in the) {placement} on
+
+**stop_mpd.intent**
+Turn off (the radio | the music)
+(Make | turn) (the radio | the music) (in | in the) {placement} off
+
+**vol_down.intent**
+make (radio | the radio | music player | the music player | mpd) a little lower
+make the  (radio | the radio | music player | the music player | mpd) (in | in the) {placement} a little lower
+make  (radio | the radio | music player | the music player | mpd) (in | in the) {placement} a little lower
+
+**vol_set_to.intent**
+(make | adjust | set | turn) the volume  on (the radio | radio | the music player | music player | mpd) on {pos_nr}
+(make | adjust | set | turn) the volume on {pos_nr}
+(make | adjust | set | turn) the volume on (the radio | radio | the music player | music player | mpd) (in | in the) {placement} to {pos_nr}
+
+
+**vol_up.intent**
+make (radio | the radio | music player | the music player | mpd) a little louder
+make  (radio | the radio | music player | the music player | mpd) (in | in the) {placement} a little louder
+make  (radio | the radio | music player | the music player | mpd) (in | in the) {placement} a bit louder
+
+<H4>Entity Fules</H4>
+**placement.entity**
+:0
+
+**playlist.entity**
+:0
+
+**pos_nr.entity**
+#
+##
+###
+
+**query.entity**
+:0
+
+**radio.entity**
+:0
+
+<H4>Dialog Files</H4>
+**cancel.dialog**
+Operation canceled.
+
+**changed_to.dialog
+switching to song number {pos_nr} 
+
+**device_not_running.dialog**
+The server is not available!
+
+**error_in_function_current_playlist.dialog**
+An error occured in function search in current playlist
+
+**feedback_query.dialog**
+Here is what I understand: {query} Is that correct?
+
+**missunderstand_query.dialog**
+Please restart the search in the music database!
+
+**missunderstand_selection.dialog**
+Didn't understand in which data field to search
+
+**mpd_connect.dialog**
+Connected!
+
+**mpd_error.dialog**
+An error has occurred in module M P D.
+
+**mpd_not_running.dialog**
+M P D is not running on the specified device!
+
+**no_result.dialog**
+Looking for {query} in data field {selection} had no results.
+
+**playlist_not_found.dialog**
+playlist not found
+
+**query_found.dialog**
+place {pos} {name}
+line {pos} {name}
+
+**query_not_found.dialog**
+The title {query} you are looking for does not exist.
+
+**some_error.dialog**
+Some error has occurred
+
+**speak_current_title.dialog**
+place {pos} {title}
+line {pos} {title}
+
+**speak_current_title_artist.dialog**
+place {pos} {title} from {artist}
+line {pos} {title} from {artist}
+
+**starting_with_number_one.dialog**
+I start the new playlist with place 1.
+
+**term_not_found.dialog**
+Search term {query} not found in any playlist.
+
+**to_play.dialog**
+Should I play one of the titles or one station? Answer yes or no.
+
+**what_to_search_in_database.dialog**
+What should I search for? Name the search term
+
+**what_type.dialog**
+Was genau suchst du? Einen künstler oder künstlerin: sage künstler. einen songtitel? sage: titel. einen albumtitel? sage album. einen Musikgattung wie blues, rock oder klassik? sage gattung.
+
+**where_to_play.dialog**
+On which radio should the music be played
+
+**which_data_field.dialog**
+In which category should I search
+
+**which_playlist_to_play.dialog**
+Which playlist should I open? Give a name or keep silent if you don't want to load a new play list
+
+**which_position_to_play.dialog**
+Name a position.
+
+**which_title_to_play.dialog**
+The search result includes {numbers} titles. Which title should I play? Say all, nothing or name a starting number, highest {numbers}
+
+
+<H4>Voc Files</H4>
+
+**album.voc**
+album
+cd
+
+**all.voc**
+all
+
+**artist.voc**
+artist
+singer
+band
+group
+
+**cancel.voc**
+Stopped searching
+
+**genre.voc**
+genre
+style
+music style
+type
+
+**no.voc**
+no
+nope
+never
+
+**nothing.voc**
+nothing
+none
+no one
+
+**title.voc**
+titel
+song
+
+**yes.voc**
+yes
+yeah
+right
+
