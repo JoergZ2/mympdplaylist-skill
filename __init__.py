@@ -18,31 +18,33 @@ class mce(Exception):
 class Mympdplaylist(MycroftSkill):
     def __init__(self):
         super(Mympdplaylist, self).__init__(name="My MPD playlist manager")
-#        self.settings_change_callback = self.on_settings_changed
- #       self.on_settings_changed()
+        self.settings_change_callback = self.on_settings_changed
+        self.on_settings_changed()
 
     def initialize(self):
         self.host = self.settings.get('radio_1')
         self.port = self.settings.get('port_1')
-        self.placements = {self.settings.get('placement_1').lower():[self.settings.get('radio_1'),self.settings.get('port_1')],\
-        self.settings.get('placement_2').lower():[self.settings.get('radio_2').lower(),self.settings.get('port_2')],\
-        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')]}
+        self.placements = {self.settings.get('placement_1'):[self.settings.get('radio_1'),self.settings.get('port_1')],\
+        self.settings.get('placement_2'):[self.settings.get('radio_2'),self.settings.get('port_2')],\
+        self.settings.get('placement_3'):[self.settings.get('radio_3'),self.settings.get('port_3')],\
+        self.settings.get('placement_4'):[self.settings.get('radio_4'),self.settings.get('port_4')],\
+        self.settings.get('placement_5'):[self.settings.get('radio_5'),self.settings.get('port_5')]}
         #self.search_fields = [self.settings.get('trans_artist').lower(), self.settings.get('trans_title').lower(),\
         #                     self.settings.get('trans_album').lower(),self.settings.get('trans_genre').lower()]
-        #self.same_device = DeviceApi()
-        #info = self.same_device.get(); self.same_device = info['description'].lower()
+        self.same_device = DeviceApi()
+        info = self.same_device.get(); self.same_device = info['description'].lower()
     
-#    def on_settings_changed(self):
-#        self.placement_1 = self.settings.get('placement_1', False)
-#        self.placement_2 = self.settings.get('placement_2', False)
-#        self.placement_3 = self.settings.get('placement_3', False)
-#        self.placement_4 = self.settings.get('placement_4', False)
-#        self.placement_5 = self.settings.get('placement_5', False)
-#        self.placements = {self.settings.get('placement_1').lower():[self.settings.get('radio_1'),self.settings.get('port_1')],\
-#        self.settings.get('placement_2').lower():[self.settings.get('radio_2').lower(),self.settings.get('port_2')],\
-#        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')],\
-#        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')],\
-#        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')]}
+    def on_settings_changed(self):
+        self.placement_1 = self.settings.get('placement_1', False)
+        self.placement_2 = self.settings.get('placement_2', False)
+        self.placement_3 = self.settings.get('placement_3', False)
+        self.placement_4 = self.settings.get('placement_4', False)
+        self.placement_5 = self.settings.get('placement_5', False)
+        self.placements = {self.settings.get('placement_1').lower():[self.settings.get('radio_1'),self.settings.get('port_1')],\
+        self.settings.get('placement_2').lower():[self.settings.get('radio_2').lower(),self.settings.get('port_2')],\
+        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')],\
+        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')],\
+        self.settings.get('placement_3').lower():[self.settings.get('radio_3').lower(),self.settings.get('port_3')]}
     
 #Basic MPD functions
     def open_connection(self, radio):
