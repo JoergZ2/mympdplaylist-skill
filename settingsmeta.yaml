@@ -41,7 +41,7 @@ skillMetadata:
           label: IP 3
           value: alternative server
           placeholder: localhost
-        - name: port_2
+        - name: port_3
           type: number
           label: Port
           value: 6600
