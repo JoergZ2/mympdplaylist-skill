@@ -9,7 +9,7 @@ from mpd import MPDClient
 from mpd import CommandError as mce
 LOGGER = getLogger(__name__)
 mpcc = MPDClient()
-##test
+#test
 
 class mce(Exception):
     def __init__(self, wert):
