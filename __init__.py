@@ -50,6 +50,7 @@ class Mympdplaylist(MycroftSkill):
     def open_connection(self, radio):
         host = self.placements[radio][0]
         port = self.placements[radio][1]
+        LOGGER.info(str(self.placements))
         try:
             mpcc.connect(host, port, timeout=10)
         except (ConnectionRefusedError):
