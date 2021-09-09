@@ -9,7 +9,7 @@ from mpd import MPDClient
 from mpd import CommandError as mce
 LOGGER = getLogger(__name__)
 mpcc = MPDClient()
-#test
+##test
 
 class mce(Exception):
     def __init__(self, wert):
@@ -18,10 +18,12 @@ class mce(Exception):
 class Mympdplaylist(MycroftSkill):
     def __init__(self):
         super(Mympdplaylist, self).__init__(name="My MPD playlist manager")
-        self.settings_change_callback = self.on_settings_changed
-        self.on_settings_changed()
 
     def initialize(self):
+        self.settings_change_callback = self.on_settings_changed
+        self.on_settings_changed()
+        self.same_device = DeviceApi()
+        info = self.same_device.get(); self.same_device = info['description'].lower()
         self.host = self.settings.get('radio_1')
         self.port = self.settings.get('port_1')
         self.placements = {self.settings.get('placement_1').lower():[self.settings.get('radio_1'),self.settings.get('port_1')],\
@@ -31,8 +33,6 @@ class Mympdplaylist(MycroftSkill):
         self.settings.get('placement_5').lower():[self.settings.get('radio_5'),self.settings.get('port_5')]}
         #self.search_fields = [self.settings.get('trans_artist').lower(), self.settings.get('trans_title').lower(),\
         #                     self.settings.get('trans_album').lower(),self.settings.get('trans_genre').lower()]
-        self.same_device = DeviceApi()
-        info = self.same_device.get(); self.same_device = info['description'].lower()
     
     def on_settings_changed(self):
         self.placement_1 = self.settings.get('placement_1', False).lower()
