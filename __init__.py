@@ -33,11 +33,11 @@ class Mympdplaylist(MycroftSkill):
         self.placement_3 = self.settings.get('placement_3', '').lower()
         self.placement_4 = self.settings.get('placement_4', '').lower()
         self.placement_5 = self.settings.get('placement_5', '').lower()
-        self.placements = {self.settings.get('placement_1').lower():[self.settings.get('radio_1'),self.settings.get('port_1')],\
-            self.settings.get('placement_2').lower():[self.settings.get('radio_2'),self.settings.get('port_2')],\
-            self.settings.get('placement_3').lower():[self.settings.get('radio_3'),self.settings.get('port_3')],\
-            self.settings.get('placement_4').lower():[self.settings.get('radio_4'),self.settings.get('port_4')],\
-            self.settings.get('placement_5').lower():[self.settings.get('radio_5'),self.settings.get('port_5')]}
+        self.placements = {self.settings.get('placement_1', '').lower():[self.settings.get('radio_1', ''),self.settings.get('port_1', '')],\
+            self.settings.get('placement_2', '').lower():[self.settings.get('radio_2', ''),self.settings.get('port_2', '')],\
+            self.settings.get('placement_3', '').lower():[self.settings.get('radio_3', ''),self.settings.get('port_3', '')],\
+            self.settings.get('placement_4', '').lower():[self.settings.get('radio_4', ''),self.settings.get('port_4', '')],\
+            self.settings.get('placement_5', '').lower():[self.settings.get('radio_5', ''),self.settings.get('port_5', '')]}
     
 #Basic MPD functions
     def open_connection(self, radio):
