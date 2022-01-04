@@ -180,12 +180,14 @@ class Mympdplaylist(MycroftSkill):
         if not 'artist' in liste:
             title = liste['title']
             pos = str(int(liste['pos']) + 1)
-            self.speak_dialog('speak_current_title', {'pos': pos, 'title': title})
+            end = "."
+            self.speak_dialog('speak_current_title', {'pos': pos, 'title': title, 'end': end})
         else:
             title = liste['title']
             pos = str(int(liste['pos']) + 1)
             artist = liste['artist']
-            self.speak_dialog('speak_current_title_artist', {'pos': pos, 'title': title, 'artist': artist})
+            end = "."
+            self.speak_dialog('speak_current_title_artist', {'pos': pos, 'title': title, 'artist': artist, 'end': end})
         self.close_connection()
 
     def speak_current_list(self, placement):
